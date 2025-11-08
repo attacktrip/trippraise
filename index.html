@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru" class="scroll-smooth">
+<html lang="ru" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Трипок - кто же это?</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Прайс-лист</title>
+<link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
@@ -15,85 +15,85 @@
                 extend: {
                     colors: {
                         dark: {
-                            900: '#0a0a0a',
-                            800: '#1a1a1a',
-                            700: '#2a2a2a'
+                            900: '#000000',
+                            800: '#111111',
+                            700: '#222222',
+                            600: '#333333',
+                            500: '#444444',
                         },
-                        glow: {
-                            blue: 'rgba(56, 182, 255, 0.1)',
-                            purple: 'rgba(151, 71, 255, 0.1)'
-                        }
-                    },
-
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-10px)' },
-                        }
-                    }
+                        primary: '#ffffff',
+                        secondary: '#ffffff'
+}
                 }
             }
         }
     </script>
 </head>
-<body class="bg-dark-800 text-gray-200 min-h-screen font-sans overflow-x-hidden">
-<glow-effect></glow-effect>
-<main class="relative z-10 container mx-auto px-4 py-16 max-w-4xl">
-        <section class="mb-20 text-center">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 animate-float">
-                Трипок
-            </h1>
-            <p class="text-xl md:text-2xl text-gray-400">кто же это?</p>
+<body class="min-h-screen">
+<div class="container mx-auto px-4 py-12">
+        <header class="text-center mb-16">
+            <h1 class="text-5xl font-bold text-primary mb-4">Прайс лист</h1>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto">Профессиональные услуги в сфере информационной безопасности</p>
+        </header>
+
+        <section class="mb-20">
+            <h2 class="text-3xl font-semibold text-secondary mb-8 text-center">Мои услуги</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- OSINT Card -->
+                <div class="bg-dark-800 rounded-xl p-6 border-l-4 border-gray-400">
+<div class="flex items-center mb-4">
+                        <i data-feather="search" class="text-primary mr-3"></i>
+                        <h3 class="text-2xl font-bold">OSINT</h3>
+                    </div>
+                    <p class="text-gray-400 mb-6">Комплексный анализ открытых источников информации для сбора данных о человеке или организации</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-3xl font-bold text-primary">600₽</span>
+                    <a href="https://t.me/xqwmtrip" class="bg-white hover:bg-gray-200 text-black px-6 py-2 rounded-lg transition glow-on-hover">Заказать</a>
+</div>
+                </div>
+
+                <!-- Account Block Card -->
+                <div class="bg-dark-800 rounded-xl p-6 border-l-4 border-gray-400">
+<div class="flex items-center mb-4">
+                        <i data-feather="lock" class="text-secondary mr-3"></i>
+                        <h3 class="text-2xl font-bold">Блокировка аккаунта</h3>
+                    </div>
+                    <p class="text-gray-400 mb-6">Принудительное закрытие и блокировка любого социального аккаунта по вашему запросу</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-3xl font-bold text-secondary">250₽</span>
+                        <a href="https://t.me/xqwmtrip" class="bg-white hover:bg-gray-200 text-black px-6 py-2 rounded-lg transition glow-on-hover">Заказать</a>
+</div>
+                </div>
+                <!-- Protection Card -->
+                <div class="bg-dark-800 rounded-xl p-6 border-l-4 border-gray-400">
+<div class="flex items-center mb-4">
+                        <i data-feather="shield" class="text-blue-400 mr-3"></i>
+                        <h3 class="text-2xl font-bold">Защита</h3>
+</div>
+                    <p class="text-gray-400 mb-6">Комплексная защита ваших данных и аккаунтов от взлома и утечки информации</p>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center bg-dark-700 px-4 py-2 rounded">
+                            <span>1 месяц</span>
+                        <span class="font-bold text-gray-300">300₽</span>
+</div>
+                        <div class="flex justify-between items-center bg-dark-700 px-4 py-2 rounded">
+                            <span>1 год</span>
+                        <span class="font-bold text-gray-300">600₽</span>
+</div>
+                        <div class="flex justify-between items-center bg-dark-700 px-4 py-2 rounded">
+                            <span>Навсегда</span>
+                        <span class="font-bold text-gray-300">1200₽</span>
+</div>
+                    </div>
+                    <a href="https://t.me/xqwmtrip" class="w-full mt-4 bg-white hover:bg-gray-200 text-black font-bold py-2 rounded-lg transition glow-on-hover block text-center">Выбрать</a>
+</div>
+            </div>
         </section>
-        <section class="bg-dark-700/60 rounded-xl p-8 shadow-2xl border border-gray-700/50 backdrop-blur-md mb-8">
-<h2 class="text-2xl font-semibold mb-6 text-blue-400 flex items-center">
-                <i data-feather="user" class="mr-2"></i> Обо мне
-            </h2>
-            <div class="space-y-4 text-gray-300 leading-relaxed">
-<p>Я Трипок, личность придуманная в 2020 году.</p>
-                <p>Пришел в телеграм комьюнити в 2023 из Дискорд комьюнити, ушел из телеграм комьюнити в 04.11.2025 00:14.</p>
-                <p class="text-red-400">Причина была существенная: мне телеграм заморозил аккаунт не имея возможности восстановить его без причины.</p>
-                <p>С аккаунтом вместе удалился и мой проект, который я развивал сквозь боль и слезы, не смотря не на что.</p>
-                <div class="pt-4">
-                    <a href="https://T.me/xqwmtrip" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 rounded-lg transition-all inline-flex items-center">
-                        <i data-feather="send" class="mr-2"></i> Написать мне
-                    </a>
-                </div>
-            </div>
-</section>
-<section class="bg-dark-800/70 rounded-xl p-8 shadow-2xl border border-gray-800/50 backdrop-blur-md mb-8">
-<h2 class="text-2xl font-semibold mb-6 text-purple-400 flex items-center">
-                <i data-feather="award" class="mr-2"></i> Мои умения
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-dark-600/50 p-6 rounded-lg border border-gray-700/50">
-<h3 class="text-xl font-medium text-blue-400 mb-3">OSINT</h3>
-                    <p class="text-gray-300">
-Сбор и анализ открытых данных, поиск информации в сети с использованием специализированных инструментов и методов.</p>
-                </div>
-                <div class="bg-dark-700/50 p-6 rounded-lg border border-gray-800/50">
-                    <h3 class="text-xl font-medium text-blue-400 mb-3">Phishing</h3>
-                    <p class="text-gray-400">Создание реалистичных фишинговых страниц и кампаний для тестирования уязвимостей систем безопасности.</p>
-                </div>
-                <div class="bg-dark-700/50 p-6 rounded-lg border border-gray-800/50">
-                    <h3 class="text-xl font-medium text-blue-400 mb-3">DDoS</h3>
-                    <p class="text-gray-400">Понимание принципов распределенных атак на отказ в обслуживании и методов защиты от них.</p>
-                </div>
-            </div>
-        </section>
-        <section class="bg-dark-700/60 rounded-xl p-8 shadow-2xl border border-gray-700/50 backdrop-blur-md mb-8">
-            <h2 class="text-2xl font-semibold mb-6 text-purple-400 flex items-center">
-                <i data-feather="dollar-sign" class="mr-2"></i> Мой прайс лист
-            </h2>
-            <div class="text-gray-300 mb-6">
-                <p>Здесь вы можете ознакомиться с моими услугами и их стоимостью</p>
-            </div>
-            <div class="text-center">
-                <a href="https://github.com/attacktrip/trippraise" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 rounded-lg transition-all flex items-center justify-center mx-auto w-fit" target="_blank" rel="noopener noreferrer">
-<i data-feather="eye" class="mr-2"></i> Посмотреть
-                </a>
-            </div>
-        </section>
+        <footer class="text-center text-gray-400 border-t border-gray-800 pt-8">
+<p>© 2023 tripok. Все права защищены.</p>
+</footer>
+    </div>
+
 </body>
 </html>
